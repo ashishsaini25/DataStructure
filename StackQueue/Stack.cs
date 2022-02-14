@@ -26,7 +26,20 @@ namespace StackQueue
             }
 
         }
-
+        public Node Pop()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Stack is Empty");
+                return head;
+            }
+            else
+            {
+                Console.WriteLine(head.data + " Poped from the stack");
+                head = head.next;
+                return head;
+            }
+        }
         public void Display()
         {
             Node temp = head;
