@@ -28,6 +28,20 @@ namespace StackQueue
                 return head;
             }
         }
+        public Node Dequeue()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Queue is  Empty");
+                return head;
+            }
+            else
+            {
+                Console.WriteLine(head.data + ": this is Dequed from Queue");
+                head = head.next;
+                return head;
+            }
+        }
 
         public void Display()
         {
