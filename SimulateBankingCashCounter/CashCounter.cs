@@ -22,8 +22,8 @@ namespace SimulateBankingCashCounter
             {
                 Console.WriteLine("Does not that much amount So unable to process this request");
             }
-            user.amount += amount;
-            cashpresent += amount;
+            user.amount -= amount;
+            cashpresent -= amount;
         }
         public void Deposit(ref Node user)
         {
